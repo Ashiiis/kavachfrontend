@@ -1,0 +1,266 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: url(./assets/bg3.jpg); */
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.circle{
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  border: 5px solid  #39ff14;
+  top: 26%;
+  left: 40%;
+  box-shadow: 0px 0px 20px #39ff14;
+}
+
+.nav{
+  /* background-color: #39ff14; */
+  
+}
+
+.nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  margin: 0px 50px;
+}
+.ul li a{
+  color: rgb(245 239 239);
+  text-decoration: underline;
+
+}
+.nav ul li{
+  font-size: 1.2rem;
+  color: white;
+  display: block;
+  background-color: rgb(163, 145, 48);
+  cursor: pointer;
+  margin: 0 30px;
+  padding: 10px;
+  border-radius: 11px;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85vh;
+}
+
+
+.login {
+  /* background-color: rebeccapurple; */
+  height: 400px;
+  width: 350px;
+}
+
+.login-box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 300px;
+  width: 250px;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 20px 0px;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: #f9f9f9;
+  padding: 0 5px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: 0;
+  left: 0;
+  padding: 2px 10px;
+  padding-left: 0px;
+  font-size: 17px;
+  color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .login-box {
+    width: 80%;
+  }
+}
+
+/* about us */
+.about-us{
+  max-width: 70vw;
+  margin: auto;
+  padding: 30px;
+}
+
+.about-us p{
+  font-size: 20px;
+}
+
+/* demo  */
+.demo{
+  /* height: 70vh; */
+  box-shadow: 5px 10px #888888;
+
+  background-color: #2c0a4e;
+  text-align: center;
+  padding: 20px;
+}
+
+.demo-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 50px;
+}
+
+.demo .yellow-box{
+  height: 55vh;
+  width: 35vw;
+  border: 2px solid yellow;
+
+}
+
+.demo .red-box{
+  height: 55vh;
+  width: 35vw;
+  border: 2px solid red;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  display: flex;
+  /* justify-content: flex-start; */
+  margin-top: -5rem;
+  }
+
+.title-h1{
+  font-size: 16px;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  display: flex;
+  /* justify-content: flex-start; */
+  margin-top: -5rem;
+  background-image: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.158) -200px, black 35%)
+  }
+
+.title{
+  font-size: 15rem;
+  font-weight: 700;
+}
+.demo {
+  position: relative;
+  overflow: hidden;
+  background-color: #0f031c;
+
+}
+
+.demo::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vmax;
+  height: 100vmax;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.demo-container {
+  position: relative;
+  z-index: 1;
+}
+
+.yellow-box,
+.red-box {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .demo-container {
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  .demo .yellow-box,
+  .demo .red-box {
+    width: 9rem;
+    height: 9rem; /* Adjust width for small screens */
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust font size for small screens */
+  }
+}
+@media only screen and (max-width: 600px)
+.title {
+    font-size: 2rem;
+}
