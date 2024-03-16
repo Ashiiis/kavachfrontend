@@ -19,4 +19,12 @@
   .container.active {
     background-color: lightgray; /* Change the background color when active */
   }
+
+@media (max-width: 600px) {
+    .containor {
+        width: calc(100% - 20px); 
+        margin-left: 4px;
+        margin-top: -44px; 
+    }
+}
   
